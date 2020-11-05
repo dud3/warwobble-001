@@ -1,0 +1,16 @@
+{
+  "name": "warwobble-server",
+  "version": "0.0.0",
+  "description": "The server portion of warwobble",
+  "main": "server.js",
+  "bin": "./server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "node-static": "0.7.2"
+  }
+}

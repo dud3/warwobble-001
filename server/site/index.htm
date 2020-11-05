@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WarWobble</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+  
+    <canvas id="myCanvas" width="640" height="480"
+            style="border: 1px solid black;">
+    Sorry, but your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <div id="debug"></div>
+
+	 <!-- multiplayer start room, because i'm too lazy to put it in canvas -->
+	 <div id="startRoom">
+		 <div id="playerList"></div>
+		 <div id="startRoomChat"></div>
+		 <div id="secondLine">
+			 <button id="ready">Ready</button>
+			 <div id="chatlineContainer">
+				 <input id="chatline" type="text" />
+			 </div>
+		 </div>
+	 </div>
+	 
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="Sprite.js"></script>
+
+    <script src="globals.js"></script>
+    <script src="consts.js"></script>
+    <script src="util.js"></script>
+    <script src="keys.js"></script>
+    <script src="mouse.js"></script>
+    <script src="player.js"></script>
+    <script src="sounds.js"></script>
+    <script src="button.js"></script>
+    
+    <script src="entityManager.js"></script>
+    <script src="screenManager.js"></script>
+    
+    <script src="world.js"></script>
+    <script src="cross.js"></script>
+
+    <script src="Entity.js"></script>
+    <script src="action.js"></script>
+    <script src="ability.js"></script>
+    <script src="unit.js"></script>
+    <script src="building.js"></script>
+    <script src="preloadEntityList.js"></script>
+
+    <script src="gather.js"></script>
+    <script src="update.js"></script>
+    <script src="render.js"></script>
+
+    <script src="diagnostics.js"></script>
+    <script src="imagesPreload.js"></script>
+    <script src="main.js"></script>
+    
+    <script src="singleplayer.js"></script>
+    <script src="multiplayer.js"></script>
+
+    <script src="WARWOBBLE.js"></script>
+
+  </body>
+</html>

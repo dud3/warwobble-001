@@ -1,0 +1,5 @@
+types of creatures:
+
+0 | peon / worker
+1 | grunt / soldier
+2 | archer / troll

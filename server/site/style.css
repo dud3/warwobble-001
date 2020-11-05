@@ -1,0 +1,97 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+canvas {
+  cursor: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 480px;
+  margin: -240px 0 0 -320px;
+  z-index: 1;
+}
+
+/* Everything for the start room when setting up multiplayer */
+#startRoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 480px;
+  margin: -240px 0 0 -320px;
+  display: none; /* hidden by default until we start an MP game */
+  z-index: 2;
+}
+
+#startRoom * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#startRoomChat {
+  height: 100%;
+  background: white;
+  width: auto;
+  overflow: hidden;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  overflow: auto;
+}
+
+#startRoomChat > .message {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#playerList {
+  background: #EEEEEE;
+  float: right;
+  width: 200px;
+  height: 100%;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  overflow-x: hidden; /* long player names go off to the side */
+}
+
+#playerList > .playerName {
+  border-bottom: 1px solid #AAAAAA;
+}
+
+#secondLine {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+#chatlineContainer { 
+  width: auto;
+  overflow: hidden;
+  margin: 0;
+}
+
+#chatline {
+  width: 100%;
+  padding: 2px;
+  border: none;
+}
+
+#ready {
+  float: right;
+  width: 80px;
+  border: none;
+  border-left: 1px solid gray;
+  padding: 2px;
+}
+
+#ready:active {
+  background: gray;
+}
+
+#debug {
+    color: white;
+}
